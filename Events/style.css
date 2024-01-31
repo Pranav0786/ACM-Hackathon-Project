@@ -134,11 +134,9 @@ body{
   }
 
   
-  @import url('https://fonts.googleapis.com/css2?family=Amita&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
   p{
-    font-size: 20px !important;
-    font-family: 'Amita', serif;
-    /* word-spacing: -0.30cap !important; */
+    font-family: 'Dosis', sans-serif !important;
     color: white !important;
   }
 
