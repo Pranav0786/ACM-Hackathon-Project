@@ -175,6 +175,15 @@ body{
     border-radius: 20px;
   }
 
-  
 
+  h1 {
+    height: 30px !important;
+    font-family: 'Merienda', cursive;
+    /* color: rgb(6, 6, 93) !important; */
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+  p{
+    font-family: 'Dosis', sans-serif !important;
+  }
   
