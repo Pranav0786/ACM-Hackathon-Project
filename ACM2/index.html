@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        var i = 0;
+        var images = [];
+        var time = 3000;
+
+        images[0] = 'main.jpg';
+        images[1] = 'executive.jpg';
+        images[2]='member.jpg'
+
+
+        function changeImg() {
+            document.slide.src = images[i];
+            if (i < images.length - 1) {
+                i++;
+            }
+            else {
+                i = 0;
+            }
+            setTimeout("changeImg()", time);
+        }
+        window.onload = changeImg;
+    </script>
+</head>
+
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fa fa-bars" id="button1"></i>
+        <i class="fa fa-times" id="button2"></i>
+    </label>
+    <div class="sidenav">
+        <header>ACM</header>
+        <ul>
+            <li><a><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="aboutus.html"><i class="fa fa-info-circle"></i>About Us</a></aAbout>
+            </li>
+            <li ><a><i class="fa fa-calendar"></i>Activities  <i class="fa fa-angle-down" style="padding-left: 10%;" ></i></a>
+            <ul class="dropdown">
+                <li>Club services</li>
+                <li>Events</li>
+            </ul>
+            </li>
+            <li><a><i class="fa fa-bold"></i>Blogs</a></li>
+            <li><a><i class="fa fa-camera"></i>Gallery</a></li>
+            <li><a><i class="fa fa-user-circle"></i>Members  <i class="fa fa-angle-down" style="padding-left: 10%;" ></i></a>
+                <ul class="dropdown2">
+                    <li><a href="mentorpage.html">Mentor Board</a></li>
+                    <li><a href="mainpage.html">Main Board</a></li>
+                    <li><a href="executivepage.html">Executive Board</a></li>
+                </ul></li>
+            <li><a><i class="fa fa-phone"></i>Contact us</a></li>
+            
+        </ul>
+    </div>
+    
+    
+    <section id="home">
+        <div class="info">
+            <div class="text1"><p>ASSOCIATION FOR COMPUTING MACHINERIES....ADVANCING COMPUTING AS SCIENCE AND PROFESSION</p></div>
+        <span><a href="index.html"><img class="logo" src="acmlogo1.png" height="300" width="300"></a></span>
+        </div>
+        <img class="slider" name="slide" width="200" height="600">
+        <div class="mainbox">
+        <div class="box">
+            <div class="boxcontent">
+                <div class="boxfront">
+                    <p>OUR MISSION</p>
+                    <img src="mission.png" height="120px" width="120px" style="border-color: white;">
+                </div>
+                <div class="boxback">
+                    <p>To Become a Leading Association to provide learning opportunities for students through various
+                        activities to achieve technical expertise</p>
+                </div>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="boxcontent1">
+                <div class="boxfront1">
+                    <p>OUR VISION</p>
+                    <img src="vision.png" height="120px" width="120px">
+                </div>
+                <div class="boxback1">
+                    <p>Promoting & Enhancing knowledge & innovation amongst our students
+                        and making them more aware of the IT industry for excellence in their
+                        career.</p>
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="boxcontent2">
+                <div class="boxfront2">
+                    <p>OUR INSPIRATION</p>
+                    <img src="inspire.PNG" height="120px" width="120px">
+                </div>
+                <div class="boxback2">
+                    <p>ACM, ACM India & WCE Sangli are our true inspiration. Their active
+                        efforts towards science & technology motivates us to keep doing
+                        our work.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+</body>
+
+</html>
