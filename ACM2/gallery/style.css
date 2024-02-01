@@ -1,8 +1,8 @@
-*{
+/* *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
+} */
 
 .sec{
     width: 100vw;
@@ -33,7 +33,7 @@ body {
 }
 
 #card{
-    position: relative;
+    /* position: relative; */
     width: 450px;
     height: 350px;
     background-color:   #f2f2f2;

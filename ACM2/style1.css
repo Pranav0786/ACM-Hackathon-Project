@@ -206,17 +206,18 @@ section p{
     letter-spacing: 2px;
     font-family: monospace;
   border-right: 5px solid white;
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: 100  px;
   width:100%;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 20s steps(40),
+  animation: typing 2s steps(40),
   cursor .4s step-end infinite alternate;
 }
 
 
 @keyframes cursor {
-    50%
+    100%
     {
         border-color: transparent;
     }
@@ -256,7 +257,7 @@ section p{
     height: 20px;
     position: absolute;
     padding-top: 10%;
-    padding-left:50%;
+    padding-left:30%;
     align-items: center;
     justify-content: space-between;
     transform: translate(-50%,-50%);
@@ -274,8 +275,8 @@ section p{
 }
 .boxback,.boxfront
 {
-    width:200px;
-    height:200px;
+    width:250px;
+    height:250px;
     padding:20px;
     position: absolute;
     backface-visibility: hidden;
@@ -317,10 +318,11 @@ section p{
     height: 20px;
     position: absolute;
     padding-top: 10%;
-    padding-left:105%;
+    padding-left:90%;
     align-items: center;
     transform: translate(-50%,-50%);
 }
+
 .box1:hover .boxcontent1
 {
    transform: rotateY(180deg); 
@@ -334,8 +336,8 @@ section p{
 }
 .boxback1,.boxfront1
 {
-    width:200px;
-    height:200px;
+    width:250px;
+    height:250px;
     padding:20px;
     position: absolute;
     backface-visibility: hidden;
@@ -377,7 +379,7 @@ section p{
     height: 20px;
     position: absolute;
     padding-top: 10%;
-    padding-left:160%;
+    padding-left:150%;
     justify-content: space-between;
     transform: translate(-50%,-50%);
 }
@@ -394,8 +396,8 @@ section p{
 }
 .boxback2,.boxfront2
 {
-    width:200px;
-    height:200px;
+    width:250px;
+    height:250px;
     padding:20px;
     position: absolute;
     backface-visibility: hidden;

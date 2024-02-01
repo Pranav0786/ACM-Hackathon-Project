@@ -1,8 +1,17 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     
+} */
+
+footer{
+    margin-top: 2100px !important;
+    padding-top: 100px !important;
+    /* background: linear-gradient(to right, #7591d9, #0e0240); */
+    /* background-image: linear-gradient(to right, #243665, #24165b); */
+    background-color: #1b0f6670;
 }
+
 #main p
 {
     align-items: center;
@@ -250,3 +259,4 @@ img {
         margin-left: 10px;
     }
 }
+

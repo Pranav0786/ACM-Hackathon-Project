@@ -5,9 +5,13 @@
     box-sizing: border-box;
 }
 footer{
-    background: linear-gradient(to right, #7591d9, #0e0240);
+    margin-top: 1000px;
+    padding-top: 100px;
+    /* background: linear-gradient(to right, #7591d9, #0e0240); */
+    /* background-image: linear-gradient(to right, #243665, #24165b); */
+    background-color: #1b0f6670;
 }
-.container{
+.container11{
     width: 100%;
     padding: 70px 30px 20px;
     
@@ -15,7 +19,7 @@ footer{
 .links{
     display: flex;
     justify-content: center;
-    position: relative;
+    /* position: relative; */
     
 }
 .links a{
