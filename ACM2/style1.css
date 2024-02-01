@@ -283,7 +283,7 @@ section p{
     box-shadow: 5px 5px 10px  #00072D;
 }
 .boxfront{
-    background: #00072D;
+    background: linear-gradient(to right, #7591d9, #0e0240);
     font-size:23px;
     padding-bottom: 10px;
     text-align: center;
@@ -301,7 +301,7 @@ section p{
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(233deg) brightness(106%) contrast(102%);
 }
 .boxback{
-    background:#00072D;
+    background: linear-gradient(to right, #7591d9, #0e0240);
     transform: rotateY(180deg);
 }
 .boxback p{
@@ -343,7 +343,7 @@ section p{
     box-shadow: 5px 5px 10px  #00072D;
 }
 .boxfront1{
-    background: #00072D;
+    background: linear-gradient(to right, #7591d9, #0e0240);
     font-size:23px;
     padding-bottom: 10px;
     text-align: center;
@@ -360,7 +360,7 @@ section p{
     filter: invert(95%) sepia(100%) saturate(22%) hue-rotate(41deg) brightness(105%) contrast(109%);
 }
 .boxback1{
-    background:#00072D;
+    background: linear-gradient(to right, #7591d9, #0e0240);
     transform: rotateY(180deg);
 }
 .boxback1 p{
@@ -405,7 +405,7 @@ section p{
     
 }
 .boxfront2{
-    background: #00072D;
+    background: linear-gradient(to right, #7591d9, #0e0240);
     font-size:22px;
     font-family: 'Roboto',sans-serif;
     padding-bottom: 10px;
@@ -424,7 +424,7 @@ section p{
     justify-content: center;
 }
 .boxback2{
-    background:#00072D;
+    background: linear-gradient(to right, #7591d9, #0e0240);
     transform: rotateY(180deg);
 }
 .boxback2 p{

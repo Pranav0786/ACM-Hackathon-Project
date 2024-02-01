@@ -4,13 +4,16 @@
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 }
-body{
+/* body{
 	width: 100%;
 	min-height: 100vh;
-	background-color: #2e2e2e;
+	background-image: linear-gradient(to right, #7591d9, #0e0240);
 	color: white;
-}
+} */
+
 .container{
+	padding-top: 100px !important;
+	background-image: linear-gradient(to right, #7591d9, #0e0240);
 	width: 100%;
 	min-height: 100vh;
 	display: flex;
@@ -94,7 +97,7 @@ section.left .contactInfo{
 }
 .iconGroup .details span{
 	display: block;
-	color: #888;
+	color:white;
 	font-size: 18px;
 }
 .iconGroup .details span:nth-child(1){
@@ -157,7 +160,7 @@ section.left .socialMedia{
 	width: 100%;
 	font-size: 18px;
 	padding: 2px 0px;
-	background-color: #2e2e2e;
+	background-color: transparent;
 	color: #ddd;
 	border: none;
 	border-bottom: 2px solid #666;
@@ -183,7 +186,7 @@ textarea::-webkit-scrollbar-thumb{
 	position: absolute;
 	left: 0;
 	bottom: 4px;
-	color: #888;
+	color: white;
 	font-size: 18px;
 	transition: 0.4s;
 	pointer-events: none;
