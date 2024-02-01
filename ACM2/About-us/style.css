@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 *{
     padding: 0;
@@ -134,3 +136,23 @@ h2{
     text-align: center; 
    }
 
+
+   @media screen and (min-width: 350px) and (max-width: 797px) {
+    .image-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-section .card1,
+    .image-section .card2 {
+        margin-bottom: 20px;
+    }
+}
+
+/* Responsive styles for screens below 350px width */
+@media screen and (max-width: 350px) {
+    .image-section .card1 img,
+    .image-section .card2 img {
+        width: 100%;
+        height: auto;
+    }
+}
