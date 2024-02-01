@@ -434,3 +434,57 @@ section p{
     padding:10%;
 }
 
+@media only screen and (max-width: 768px )and (min-width:445px) {
+    .sidenav {
+        left: -250px;
+    }
+    #check:checked ~.sidenav {
+        left: 0;
+    }
+    #check:checked ~ label #button1 {
+        left: 250px;
+    }
+    #check:checked ~ label #button2 {
+        left: 195px;
+    }
+    #check:checked ~section {
+        margin-left: 0;
+    }
+    #check:checked ~span {
+        margin-left: 0;
+    }
+    .info {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text1 {
+        padding-left: 0;
+        border-right: none;
+        white-space: normal;
+        overflow: visible;
+        animation: none;
+    }
+    .slider {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .mainbox
+    {
+        display: flex;
+        flex-direction: column;
+        gap:15rem;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* position: relative; */
+        margin-left: 50%;
+        margin-top: 30px;
+    }
+ 
+    .box,
+    .box1,
+    .box2 {
+        padding-left: 50%;
+        position: relative;
+    }
+}

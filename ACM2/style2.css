@@ -204,3 +204,49 @@ img {
 }
     
     
+@media only screen and (max-width: 768px) {
+    .row1, .row2, .row3, .row4, .row5, .row6, .row7 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .container {
+        height: 250px;
+        width: 250px;
+    }
+    .info .text1
+    {
+        position:relative ;
+    }
+    .container .image-section {
+        height: 100%;
+        width: 100%;
+        margin-top: 0;
+        height: 200px;
+        width: 200px;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .text-section span:nth-child(1) {
+        font-size: 24px;
+    }
+
+    .text-section span:nth-child(2) {
+        font-size: 14px;
+    }
+
+    .social {
+        width: 200px;
+    }
+
+    .social i {
+        height: 30px;
+        width: 30px;
+        font-size: 24px;
+        margin-left: 10px;
+    }
+}
