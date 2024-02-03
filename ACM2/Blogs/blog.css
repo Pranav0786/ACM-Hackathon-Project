@@ -14,23 +14,12 @@
     flex-wrap: wrap;
 }
 
-@media (max-width: 1000px){
-    .sec{
-        flex-direction: row;
-        gap: 20px;
-    }
-}
 
 body{
   background-image: linear-gradient(to right, #7591d9, #0e0240);
 }
 
-@media (max-width: 1000px){
-  .box{
-      flex-direction: row;
-      gap: 20px;
-  }
-}
+
 
 .card {
     width: 450px;
@@ -91,3 +80,18 @@ body{
    a{
     text-decoration: none;
    }
+
+
+   @media (max-width: 1000px){
+    .sec{
+        flex-direction: row;
+        gap: 20px;
+    }
+  }
+  @media (max-width: 1000px){
+    .box{
+        flex-direction: row;
+        gap: 20px;
+    }
+  }
+  

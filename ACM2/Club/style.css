@@ -14,23 +14,12 @@
   flex-wrap: wrap;
 }
 
-@media (max-width: 1000px){
-  .sec{
-      flex-direction: row;
-      gap: 20px;
-  }
-}
 
 body{
 background-image: linear-gradient(to right, #7591d9, #0e0240);
 }
 
-@media (max-width: 1000px){
-.box{
-    flex-direction: row;
-    gap: 20px;
-}
-}
+
 .box3{
   display: flex;
   /* flex-direction: column; */
@@ -188,3 +177,17 @@ font-weight: 500;
     color: white !important;
   }
   
+
+  @media (max-width: 1000px) {
+    .sec,
+    .box3 {
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .box3 {
+      flex-direction: column;
+    }
+  }
