@@ -1,0 +1,151 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="/ACM2/Footer/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script>
+        var i = 0;
+        var images = [];
+        var time = 3000;
+
+        images[0] = 'main.jpg';
+        images[1] = 'executive.jpg';
+        images[2]='member.jpg'
+
+
+        function changeImg() {
+            document.slide.src = images[i];
+            if (i < images.length - 1) {
+                i++;
+            }
+            else {
+                i = 0;
+            }
+            setTimeout("changeImg()", time);
+        }
+        window.onload = changeImg;
+    </script>
+</head>
+
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fa fa-bars" id="button1"></i>
+        <i class="fa fa-times" id="button2"></i>
+    </label>
+    <div class="sidenav">
+        <header>ACM</header>
+        <ul>
+            <li><a href="/ACM2/index.html"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="About-us/index.html"><i class="fa fa-info-circle"></i>About Us</a></aAbout>
+            </li>
+            <li ><a><i class="fa fa-calendar"></i>Activities  <i class="fa fa-angle-down" style="padding-left: 10%;" ></i></a>
+            <ul class="dropdown">
+                <li><a href="Club/cs.html">Club services</a></li>
+                <li><a href="Events/event.html">Events</a></li>
+            </ul>
+            </li>
+            <li><a href="Blogs/blog.html"><i class="fa fa-bold"></i>Blogs</a></li>
+            <li><a href="gallery/gallery.html"><i class="fa fa-camera"></i>Gallery</a></li>
+            <li><a><i class="fa fa-user-circle"></i>Members  <i class="fa fa-angle-down" style="padding-left: 10%;" ></i></a>
+                <ul class="dropdown2">
+                    <li><a href="mentorpage.html">Mentor Board</a></li>
+                    <li><a href="mainpage.html">Main Board</a></li>
+                    <li><a href="executivepage.html">Executive Board</a></li>
+                </ul></li>
+            <li><a href="Contact-Us/contact.html"><i class="fa fa-phone"></i>Contact us</a></li>
+            
+        </ul>
+    </div>
+    
+    
+    <section id="home">
+        <h1 style="padding-left: 47%; padding-top: 35px; 
+        font-size: 40px ;
+        color:white; 
+        font-family:Arial, Helvetica, sans-serif !important;">WCE-ACM</h1>
+        <div class="info">
+            <div class="text1"><p style="padding-left: 32%; 
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 30px;
+            font-size: 25px; 
+            margin-bottom: 20px;">ASSOCIATION FOR COMPUTING MACHINERY</p></div>
+            
+        <span style="margin-top: -85px;
+        padding-right: 30px;"><a href="index.html"><img class="logo" src="acmlogo1.png" height="300" width="300"></a></span>
+        </div>
+        <img class="slider" name="slide" width="200" height="600">
+        <div class="mainbox">
+        <div class="box">
+            <div class="boxcontent">
+                <div class="boxfront">
+                    <p>OUR MISSION</p>
+                    <img src="mission.png" height="120px" width="120px" style="border-color: white;">
+                </div>
+                <div class="boxback">
+                    <p>To Become a Leading Association to provide learning opportunities for students through various
+                        activities to achieve technical expertise</p>
+                </div>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="boxcontent1">
+                <div class="boxfront1">
+                    <p>OUR VISION</p>
+                    <img src="vision.png" height="120px" width="120px">
+                </div>
+                <div class="boxback1">
+                    <p>Promoting & Enhancing knowledge & innovation amongst our students
+                        and making them more aware of the IT industry for excellence in their
+                        career.</p>
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="boxcontent2">
+                <div class="boxfront2">
+                    <p>OUR INSPIRATION</p>
+                    <img src="inspire.png" height="120px" width="120px">
+                </div>
+                <div class="boxback2">
+                    <p>ACM, ACM India & WCE Sangli are our true inspiration. Their active
+                        efforts towards science & technology motivates us to keep doing
+                        our work.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <footer style="margin-top: 300px;">
+        <div class="container">
+            <div class="links">
+                    <a href="https://www.facebook.com/wceacm?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/wce_acm?igsh=bzZ4bno5bTJsMjB4"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/wce-acm-student-chapter/"><i class="fab fa-linkedin"></i></a>
+            </div>
+            
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="/ACM2/index.html">Home</a></li>
+                    <li><a href="/ACM2/About-us/index.html">About us</a></li>
+                    <li><a href="/ACM2/Blogs/blog.html">Blogs</a></li>
+                    <li><a href="/ACM2/Events/event.html">Events</a></li>
+                    <li><a href="/ACM2/Club/cs.html">Club Services</a></li>
+                    <li><a href="/ACM2/Contact-Us/contact.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy;2024; Designed by <span class="designer">ACM Community</span></p>
+            </div>
+        
+        
+    </footer>
+</body>
+
+</html>
