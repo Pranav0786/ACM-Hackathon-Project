@@ -1,0 +1,186 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+
+.sec{
+    width: 100vw;
+    height: 100vh;
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media (max-width: 1000px){
+    .sec{
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+body{
+  background-image: linear-gradient(to right, #7591d9, #0e0240);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Set background color */
+    background-image: linear-gradient(to right, #7591d9, #0e0240); /* Add background image */
+}
+
+#card{
+    /* position: relative; */
+    width: 450px;
+    height: 350px;
+    background-color:   #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+
+/* CSS for Photo Gallery */
+h1 {
+    color: transparent;
+    text-align: center;
+    margin-top: 35px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+h1.blinking {
+    animation: blinkText 1s infinite alternate;
+    color: gold; /* Change color to golden */
+}
+
+@keyframes blinkText {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* section {
+    margin-bottom: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: revealSections 1.5s forwards;
+    animation-delay: 1s; 
+} */
+
+@keyframes revealSections {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* div {
+    flex: 0 1 calc(50% - 20px);
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    opacity: 0;
+    animation: revealImages 1s forwards;
+} */
+
+@keyframes revealImages {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+div:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #666666;
+    transition: color 0.3s ease;
+}
+
+h2:hover {
+    color: #6f00ff;
+}
+
+/* img {
+    max-width: 50%; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+    animation: rotateImage 4s linear forwards; 
+} */
+
+img:hover {
+    transform: scale(1.05) rotate(0deg); /* Remove rotation on hover */
+}
+
+@keyframes rotateImage {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rsc img{
+    height: 90%;
+    width: 100%;
+    border-radius: 30px;
+}
+.hack img{
+    height: 90%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.dsa{
+    padding-top: 40px;
+}
+.cs{
+    padding-top: 40px;
+}
+
+.dsa img{
+    height: 80%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.cs img{
+    height: 80%;
+    width: 100%;
+    border-radius: 30px;
+}

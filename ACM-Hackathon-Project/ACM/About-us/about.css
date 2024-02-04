@@ -1,0 +1,162 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif ;
+}
+body{
+    background: linear-gradient(to right, #7591d9, #0e0240);;
+}
+body .title{
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+
+}
+body .container{
+    margin-top: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 70vh;
+    width: 100%;
+}
+.container{
+    padding-left: 300px !important;
+    align-items: center;
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.container .box{
+    height: 500px;
+    position: relative;
+    width: 320px;
+    background: #fff;
+    padding: 100px 40px 60px;
+    box-shadow: 0 15px 45px rgba(0,0,0,.1);
+}
+.container .box:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #354793;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+.container .box:hover:before{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+.container .box h2{
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    font-size: 4em;
+    font-weight: 800;
+    z-index: 1;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+.container .box:hover h2{
+    opacity: 1;
+    color: #fff;
+    transform: translateY(-40px);
+
+}
+.container .box h3{
+    position: relative;
+    font-size: 1.5em;
+    z-index: 2;
+    color: #333;
+    transition: 0.5s;
+}
+.container .box:hover h3{
+    color: #fff;
+}
+.container .box p{
+    position: relative;
+    z-index: 2;
+    color: #555;
+    transition: 0.5s;
+    font-size: smaller;
+}
+.container .box:hover p{
+    color: #fff;
+}
+.image-section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:80%;
+    padding-left:20%;
+    padding-bottom: 10%;
+}
+h2{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size:30px;
+    color: white;
+
+}
+
+.image-section .card1 img{
+    width:300px;
+    height:300px;
+    
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgb(50, 47, 47);
+}
+.image-section .card2 img{
+    width:300px;
+    height:300px;
+    
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgb(50, 47, 47);
+}
+
+.image-section .card1 .card-content,.card2 .card-content{
+ padding-top: 10%;  
+ color: white;
+}
+.image-section .card1 h3,.card2 h3{
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+   }
+
+
+   @media screen and (min-width: 350px) and (max-width: 797px) {
+    .image-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-section .card1,
+    .image-section .card2 {
+        margin-bottom: 20px;
+    }
+}
+
+/* Responsive styles for screens below 350px width */
+@media screen and (max-width: 350px) {
+    .image-section .card1 img,
+    .image-section .card2 img {
+        width: 100%;
+        height: auto;
+    }
+}
